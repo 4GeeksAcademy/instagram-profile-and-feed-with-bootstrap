@@ -1,0 +1,15 @@
+{
+  "name": "instagram-profile-and-feed-with-bootstrap",
+  "version": "1.0.0",
+  "description": "The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}
