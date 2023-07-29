@@ -38,7 +38,6 @@
             </div>
             <span class="fs-4">Instagram</span>
           </a>
-          <!--rigth side navbar-->
 
           <!--collapse navbar-->
           <button
@@ -54,27 +53,100 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item d-lg-none">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >New Post</a
-                >
-              </li>
-              <li class="nav-item d-lg-none">
+              <!--MODAL WHEN COLLAPSED-->
+              <button
+                class="btn btn-dark me-2 d-lg-none nav-item mt-4"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                New post
+              </button>
+
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Create a new post
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label"
+                            >Caption:</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control pb-5"
+                            id="recipient-name"
+                            placeholder="Add the caption of your post here"
+                          />
+                        </div>
+                        <button
+                          class="btn btn-outline-secondary me-1 mb-3"
+                          style="width: 40px"
+                        >
+                          <i
+                            class="fa-solid fa-camera"
+                            style="color: black"
+                          ></i>
+                        </button>
+                        <button
+                          class="btn btn-outline-secondary mb-3"
+                          style="width: 40px"
+                        >
+                          <i
+                            class="fa-solid fa-location-dot"
+                            style="color: #000000"
+                          ></i>
+                        </button>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-outline-dark"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        Publish
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <li class="nav-item d-lg-none text-center">
                 <a class="nav-link active" aria-current="page" href="#"
                   >Profile</a
                 >
               </li>
-              <li class="nav-item d-lg-none">
+              <li class="nav-item d-lg-none text-center">
                 <a class="nav-link active" aria-current="page" href="#"
                   >Accessibility</a
                 >
               </li>
-              <li class="nav-item d-lg-none">
+              <li class="nav-item d-lg-none text-center">
                 <a class="nav-link active" aria-current="page" href="#"
                   >Privacy and data</a
                 >
               </li>
-              <li class="nav-item d-lg-none">
+              <li class="nav-item d-lg-none text-center">
                 <a
                   class="nav-link active text-danger"
                   aria-current="page"
@@ -198,8 +270,6 @@
                 </ul>
               </button>
             </div>
-       
-        
           </div>
         </div>
       </nav>
